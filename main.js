@@ -2,17 +2,19 @@ const generaBtn = document.querySelector('#generaBtn');
 const annullaBtn = document.querySelector('#annullaBtn');
 const biglietto = document.querySelector('#biglietto');
 
+
+const nome = document.querySelector('#nome');
+const tipo = document.querySelector('#tipo');
+const carrozza = document.querySelector('#carrozza');
+const codice = document.querySelector('#codice');
+const prezzo = document.querySelector('#prezzo');
+
+const nomeInput = document.querySelector('#nomeForm');
+const kmInput = document.querySelector('#kilometriForm');
+const etaInput = document.querySelector('#etaForm');
+
 generaBtn.addEventListener('click', function() {
 
-    const nome = document.querySelector('#nome');
-    const tipo = document.querySelector('#tipo');
-    const carrozza = document.querySelector('#carrozza');
-    const codice = document.querySelector('#codice');
-    const prezzo = document.querySelector('#prezzo');
-    
-    const nomeInput = document.querySelector('#nomeForm');
-    const kmInput = document.querySelector('#kilometriForm');
-    const etaInput = document.querySelector('#etaForm');
     const km = parseInt(kmInput.value);
     const eta = parseInt(etaInput.value);
 
@@ -42,9 +44,6 @@ generaBtn.addEventListener('click', function() {
 })
 
 annullaBtn.addEventListener('click', function() {
-    const kmInput = document.querySelector('#kilometriForm');
-    const etaInput = document.querySelector('#etaForm');
-    const nomeInput = document.querySelector('#nomeForm');
     kmInput.value = "";
     etaInput.value = "";
     nomeInput.value = "";
