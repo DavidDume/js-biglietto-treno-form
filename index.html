@@ -11,14 +11,30 @@
 </head>
 <body>
 
-    <div>
+    <div class="form-container">
         <form>
-            <label for="kilometri">Insirisci numero kilometri:</label>
-            <input type="text" id="kilometri" placeholder="KM">
-            <label for="eta">Inserisci fascia di età:</label>
-            <input type="text" id="eta" placeholder="eta">
+            <div>
+                <label for="nome">Insirisci nome passeggero:</label>
+                <input type="text" id="nome" placeholder="Nome">
+            </div>
+            
+            <div>
+                <label for="kilometri">Insirisci numero kilometri:</label>
+                <input type="text" id="kilometri" placeholder="KM">
+            </div>
+            
+            <div>
+                <label for="eta">Inserisci fascia di età:</label>
+                <select id="eta">
+                    <option value="11">Under 18</option>
+                    <option value="35">18 - 65</option>
+                    <option value="78">over 65</option>
+                </select>
+            </div>
+            
         </form>
         <button id="generaBtn">Genera</button>
+        <button id="annullaBtn">Annulla</button>
     </div>
 
     <script src="main.js"></script>

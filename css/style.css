@@ -13,13 +13,24 @@ body {
     align-items: center;
 }
 
-div {
+.form-container {
     text-align: center;
     padding: 30px;
     border-radius: 10px;
     background-color: white;
 }
 
-span {
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form > div {
+    margin: 20px 10px;
+}
+
+input, select {
     display: block;
+    width: 100%;
 }
