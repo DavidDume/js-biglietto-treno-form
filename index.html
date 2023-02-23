@@ -11,21 +11,21 @@
 </head>
 <body>
 
-    <div class="form-container">
+    <div class="container form-container">
         <form>
             <div>
-                <label for="nome">Insirisci nome passeggero:</label>
-                <input type="text" id="nome" placeholder="Nome">
+                <label for="nomeForm">Insirisci nome passeggero:</label>
+                <input type="text" id="nomeForm" placeholder="Nome">
             </div>
             
             <div>
-                <label for="kilometri">Insirisci numero kilometri:</label>
-                <input type="text" id="kilometri" placeholder="KM">
+                <label for="kilometriForm">Insirisci numero kilometri:</label>
+                <input type="text" id="kilometriForm" placeholder="KM">
             </div>
             
             <div>
-                <label for="eta">Inserisci fascia di età:</label>
-                <select id="eta">
+                <label for="etaForm">Inserisci fascia di età:</label>
+                <select id="etaForm">
                     <option value="11">Under 18</option>
                     <option value="35">18 - 65</option>
                     <option value="78">over 65</option>
@@ -35,6 +35,28 @@
         </form>
         <button id="generaBtn">Genera</button>
         <button id="annullaBtn">Annulla</button>
+    </div>
+    
+    <div class="container hidden" id="biglietto">
+        <h2>DETTAGLI PASSEGGERI</h2>
+        <table>
+            <thead>
+                <th>NOME PASSEGGERO</th>
+                <th>Offerta</th>
+                <th>Carrozza</th>
+                <th>Codice CP</th>
+                <th>Prezzo</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="nome"></td>
+                    <td id="tipo"></td>
+                    <td id="carrozza"></td>
+                    <td id="codice"></td>
+                    <td id="prezzo"></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <script src="main.js"></script>
